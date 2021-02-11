@@ -1,0 +1,82 @@
+@font-face{
+    font-family: Allura;
+    src: url(../fonts/allura.ttf) format("truetype")
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/poppins.ttf) format("truetype")
+}
+
+* { 
+    margin:0;
+    border:0;
+    font-size:100%;
+    outline: 0;
+    padding:0;
+    font-family: Poppins;
+}
+
+html{
+    background-color: black;
+    color:white;
+}
+
+#navBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding:0rem 2rem;
+    user-select: none;
+}
+
+#navBar h1{
+    font-size:300%;
+}
+
+#titleLink:hover{
+    text-shadow: 5px 5px brown;
+}
+
+#titleLink:active{
+    text-shadow: 3px 3px brown;
+}
+
+#active{
+    border: 1px solid white;
+}
+
+#links{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link{
+    padding: .4rem;
+    margin: 1rem;
+}
+
+.link:hover{
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.link:active{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 2px 3px gray;
+}
+
+.home{
+
+}
+
+#footer{
+    width:100%;
+
+}
