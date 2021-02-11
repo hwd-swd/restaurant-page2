@@ -41,7 +41,22 @@ function createNavbar(){
 function createHome(){
     let home = document.createElement('div');
     home.setAttribute('class','home');
-    home.textContent="home";
+
+    let buttons = document.createElement('div');
+    buttons.setAttribute('id','buttons');
+    home.appendChild(buttons);
+
+    let button1 = document.createElement('h2');
+    button1.setAttribute('id','button1');
+    button1.textContent='Menu';
+    button1.setAttribute('class','link')
+    buttons.appendChild(button1);
+
+    let button2 = document.createElement('h2');
+    button2.setAttribute('id','button2');
+    button2.textContent='Visit Us';
+    button2.setAttribute('class','link')
+    buttons.appendChild(button2);
 
     return home
 }
