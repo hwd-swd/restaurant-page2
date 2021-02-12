@@ -1,11 +1,11 @@
 @font-face{
     font-family: Allura;
-    src: url(../fonts/allura.ttf) format("truetype")
+    src: url(./fonts/allura.ttf) format("truetype")
 }
 
 @font-face{
     font-family: Poppins;
-    src: url(../fonts/poppins.ttf) format("truetype")
+    src: url(./fonts/poppins.ttf) format("truetype")
 }
 
 * { 
@@ -103,7 +103,7 @@
     justify-content: center;
     width: 100%;
     height: calc(100vh - 6rem);
-    background-image: url(../imgs/pastries.jpg);
+    background-image: url(./imgs/pastries.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -165,7 +165,7 @@ footer h2{
 #github{
     height:16px;
     width: 16px;
-    background-image: url(../imgs/github/github.png);
+    background-image: url(./imgs/github/github.png);
     background-size: contain;
     margin:1rem;
 }
@@ -233,12 +233,12 @@ footer h2{
 }
 
 .story{
-    background-image: url(../imgs/story.jpg);
+    background-image: url(./imgs/story.jpg);
     width: 100%;
 }
 
 .visit{
-    background-image: url(../imgs/pastries.jpg);
+    background-image: url(./imgs/pastries.jpg);
     background-size: cover;
     width: 100%;
 }

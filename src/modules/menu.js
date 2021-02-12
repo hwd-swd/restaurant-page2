@@ -26,7 +26,7 @@ function createMenu(){
 }
 
 function createMenuItem(itemName,itemNum){
-    let src = ['../dist/imgs/macarons.jpg','../dist/imgs/croissant.jpg','../dist/imgs/mille-feuille.jpg','../dist/imgs/viet-coffee.jpg']
+    let src = ['./imgs/macarons.jpg','./imgs/croissant.jpg','./imgs/mille-feuille.jpg','./imgs/viet-coffee.jpg']
 
     let menuContainer = document.createElement('div');
     menuContainer.setAttribute('class','menuContainer');
