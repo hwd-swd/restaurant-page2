@@ -64,7 +64,15 @@ function createHome(){
 function createFooter(){
     let footer = document.createElement('footer');
     footer.setAttribute('id','footer');
-    footer.textContent="C 2021 Anthony Nguyen";
+
+    let name = document.createElement('h2');
+    name.textContent='By Anthony Nguyen';
+    footer.appendChild(name);
+
+    let github = document.createElement('a');
+    github.setAttribute('href','https://github.com/hwd-swd/');
+    footer.appendChild(github);
+    github.setAttribute('id','github');
     return footer
 }
 
