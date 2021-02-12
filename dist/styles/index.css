@@ -174,11 +174,12 @@ footer h2{
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 6rem);
-    width: 100%;
+    margin: 0 auto;
     align-items: center;
 }
 .menu{
     background-color: var(--lightbrown);
+    border: black 2px solid;
 }
 .menuItems{
     display:grid;
@@ -229,6 +230,29 @@ footer h2{
 
 .menuContainer h3{
     font-size: 80%;
+}
+
+.story{
+    background-image: url(../imgs/story.jpg);
+    width: 100%;
+}
+
+.visit{
+    background-image: url(../imgs/pastries.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.story h1, .visit h1{
+    margin:2rem;
+    color:white;
+    font-size: 400%;
+}
+
+#storyText, #visitText {
+    padding:2rem;
+    width:80%;
+    background-color: var(--gray);
 }
 
 @media screen and (max-width:400px){
