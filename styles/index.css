@@ -114,6 +114,23 @@
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width:100%;
-    margin-bottom: 1rem;
+}
+
+footer h2{
+    margin:1rem;
+}
+
+#github{
+    height:32px;
+    width: 32px;
+    background-image: url(../imgs/github/github-light.png);
+    margin:1rem;
+}
+
+.menu, .story, .visit{
+    margin: auto;
 }
