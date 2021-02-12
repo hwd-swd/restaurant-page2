@@ -75,6 +75,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-right:1rem;
 }
 
 .link{
@@ -172,12 +173,13 @@ footer h2{
 .menu,.story, .visit{
     display: flex;
     flex-direction: column;
-    height: 100%;
     min-height: calc(100vh - 6rem);
     width: 100%;
     align-items: center;
 }
-
+.menu{
+    background-color: var(--lightbrown);
+}
 .menuItems{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -185,10 +187,13 @@ footer h2{
     min-height: calc(100vh - 6rem);
     width: 100%;
     justify-items: center;
+    grid-gap: 2rem;
+    max-width: 800px;
 }
 
 .menu h1{
     font-size:300%;
+    margin: 1rem auto;
 }
 
 .menuContainer{
@@ -196,7 +201,13 @@ footer h2{
     flex-direction: column;
     align-items: center;
     width:300px;
-    height: 450px;
+    height: 400px;
+    padding:1rem;
+    margin:1.5rem;
+}
+
+.menuContainer:hover{
+    box-shadow: 0px 0px 5px 5px var(--darkbrown);
 }
 
 .menuContainer h1{
@@ -207,12 +218,13 @@ footer h2{
     height:300px;
     width:300px;
     object-fit: cover;
+    margin-bottom:1rem;
 }
 
 
 .menuContainer h2{
     font-weight: bold;
-    font-size: 120%;
+    font-size: 140%;
 }
 
 .menuContainer h3{
