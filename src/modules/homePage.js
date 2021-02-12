@@ -42,9 +42,18 @@ function createHome(){
     let home = document.createElement('div');
     home.setAttribute('class','home');
 
+    let container = document.createElement('div');
+    container.setAttribute('id','container');
+    home.appendChild(container);
+
+    let slogan = document.createElement('h1');
+    slogan.textContent="Docle & arbito.";
+    slogan.setAttribute('id','slogan');
+    container.appendChild(slogan);
+
     let buttons = document.createElement('div');
     buttons.setAttribute('id','buttons');
-    home.appendChild(buttons);
+    container.appendChild(buttons);
 
     let button1 = document.createElement('h2');
     button1.setAttribute('id','button1');

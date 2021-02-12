@@ -101,17 +101,27 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 6rem);
     background-image: url(../imgs/pastries.jpg);
     background-position: center;
     background-size: cover;
 }
 
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+}
+
+#slogan{
+    text-align: center;
+    font-size: 500%;
+}
+
 #buttons{
     display:flex;
     flex-direction: row;
-    max-width:40rem;
-    width: 44%;
     justify-content: space-between;
     user-select: none;
     text-align: center;
@@ -141,8 +151,9 @@
 footer{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    height:4rem;
+    height:2rem;
     width:100%;
 }
 
@@ -151,20 +162,80 @@ footer h2{
 }
 
 #github{
-    height:32px;
-    width: 32px;
+    height:16px;
+    width: 16px;
     background-image: url(../imgs/github/github.png);
+    background-size: contain;
     margin:1rem;
 }
 
-.menu, .story, .visit{
+.menu,.story, .visit{
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    min-height: calc(100vh - 6rem);
+    width: 100%;
+    align-items: center;
+}
+
+.menuItems{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    min-height: calc(100vh - 6rem);
+    width: 100%;
+    justify-items: center;
+}
+
+.menu h1{
+    font-size:300%;
+}
+
+.menuContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    height: 450px;
+}
+
+.menuContainer h1{
+    font-size: 350%;
+}
+
+.menuContainer img{
+    height:300px;
+    width:300px;
+    object-fit: cover;
+}
+
+
+.menuContainer h2{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.menuContainer h3{
+    font-size: 80%;
 }
 
 @media screen and (max-width:400px){
+    #navBar{
+        flex-direction: column;
+    }
     #buttons{
         flex-direction: column;
         width: 80%;
-        height: 40%;
+        height: 25%;
+    }
+    #slogan{
+        text-align: center;
+        font-size: 200%;
+    }
+    
+}
+@media screen and (max-width:800px){
+    .menuItems{
+        grid-template-columns: 1fr;
     }
 }
